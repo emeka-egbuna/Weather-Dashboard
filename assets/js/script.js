@@ -60,7 +60,7 @@ function displayLocationInfo(city) {
         lon = JSON.stringify(Math.abs(data[0].lon.toFixed(4)));
         lat = JSON.stringify(Math.abs(data[0].lat.toFixed(4)));
 
-            var queryURL = "http://api.openweathermap.org/data/2.5/forecast?lat="+ lat +"&lon=" + lon +"&appid="+keyAPi;
+            var queryURL = "http://api.openweathermap.org/data/2.5/forecast?lat="+ lat +"&lon=" + lon +"&appid="+keyAPi+"&units=metric";
             //queryURLx = "http:api.openweathermap.org/data/2.5/forecast?q="+ city +",GB&appid="+keyAPi;
         
              // We then created an Fetch call
